@@ -26,13 +26,13 @@
           Hello fellow shoppers! We're currently building our new fashion store. 
           Add your email below to stay up-to-date with announcements and our launch deals.
         </label>
-        <form action="/" class="form">
+        <form action="/" name="myForm" onsubmit="return validateForm()" class="form">
           <div class="inputs">
-            <input class="email-input" type="email" name="email" placeholder="Email Address" required>
-            <img class="icon-error" src="./images/icon-error.svg" alt="error">
+            <input class="email-input" type="text" name="fieldEmail" placeholder="Email Address">
+            <img id="errorIcon" class="icon-error" src="./images/icon-error.svg" alt="error">
             <button class="btn-submit" type="submit"><img src="./images/icon-arrow.svg" alt="Enviar"></button>
           </div>
-          <label class="error-message">Please provide a valid email</label>
+          <label id="errorMessage" class="error-message">Please provide a valid email</label>
         </form>
       </div>
     </div>
@@ -46,5 +46,7 @@
       repository in <a target="_blank" href="https://github.com/EvertonBorges/base-apparel-coming-soon-master"> github</a>
     </label>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
