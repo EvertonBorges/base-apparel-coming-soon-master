@@ -217,10 +217,8 @@ label {
 }
 
 footer {
-    position: absolute;
     width: 100%;
-    bottom: 0;
-    margin: 1rem auto;
+    margin: 25px auto 10px;
     font-size: 0.9rem;
 }
 
