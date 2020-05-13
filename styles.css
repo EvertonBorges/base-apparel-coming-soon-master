@@ -1,0 +1,229 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.informations {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+label {
+    display: block;
+}
+
+.form {
+    width: 100%;
+}
+
+.inputs {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+}
+
+.email-input {
+    height: 48px;
+    width: 100%;
+    padding: 0 75px 0 25px;
+    border-radius: 50px;
+    border: solid 1px hsl(0, 80%, 86%);
+}
+
+.email-input::placeholder {
+    color: hsl(0, 80%, 86%);
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: hsl(0, 93%, 68%);
+}
+
+.icon-error {
+    display: none;
+    position: relative;
+    height: 24px;
+    right: 60px;
+    margin: auto;
+}
+
+.btn-submit {
+    border: none;
+    border-radius: 50px;
+    height: 100%;
+    width: 150px;
+    margin: 0 0 0 -50px;
+    padding: 0;
+    float: right;
+    cursor: pointer;
+    transition: ease-in-out 0.3s all;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.btn-submit:hover {
+    z-index: 5;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 80%, 86%));
+    box-shadow: 0px 8px 16px -1px hsl(0, 36%, 70%);
+}
+
+.error-message {
+    display: none;
+    margin-top: 12px;
+    margin-left: 25px;
+    color: hsl(0, 36%, 70%);
+}
+
+@media(max-width: 1140px) {
+    .hero-mobile {
+        display: flex;
+        margin-top: 30px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .hero {
+        display: none;
+    }
+
+    .logo {
+        margin: 25px 10% 0;
+        height: 1.5rem;
+    }
+
+    .informations {
+        background-image: none;
+    }
+    
+    .informations-body {
+        margin: 0px 10% auto;
+    }
+
+    .title span {
+        font-weight: 300;
+        color: hsl(0, 36%, 70%);
+        display: block;
+    }
+    
+    .title {
+        margin-top: 60px;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        font-weight: 600;
+        letter-spacing: 0.75rem;
+        text-transform: uppercase;
+        color: hsl(0, 6%, 24%);
+    }
+    
+    .text-body {
+        margin-top: 15px;
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        color: hsl(0, 36%, 70%);
+    }
+
+    label {
+        text-align: center;
+    }
+
+    .inputs {
+        margin-top: 20px;
+    }
+
+    .error-message {
+        font-size: 0.9rem;
+    }
+}
+
+@media(min-width: 1141px) {
+    body {
+        height: 100vh;
+    }
+
+    .hero-mobile {
+        display: none;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .logo {
+        margin: 130px 20% 0;
+    }
+    
+    .informations {
+        background-image: url(images/bg-pattern-desktop.svg);
+        max-width: 800px;
+    }
+    
+    .informations-body {
+        margin: 0 20% auto;
+    }
+
+    .title span {
+        font-weight: 300;
+        color: hsl(0, 36%, 70%);
+        display: block;
+    }
+    
+    .title {
+        margin-top: 125px;
+        font-size: 4rem;
+        line-height: 4.25rem;
+        font-weight: 600;
+        letter-spacing: 1.5rem;
+        text-transform: uppercase;
+        color: hsl(0, 6%, 24%);
+    }
+    
+    .text-body {
+        margin-top: 25px;
+        font-weight: 300;
+        font-size: 1.15rem;
+        line-height: 1.75rem;
+        color: hsl(0, 36%, 70%);
+    }
+
+    label {
+        text-align: start;
+    }
+
+    .inputs {
+        margin-top: 40px;
+    }
+
+    .error-message {
+        font-size: 1rem;
+    }
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 1rem auto;
+    font-size: 0.9rem;
+}
+
+footer label {
+    text-align: center;
+}

@@ -5,29 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  We're coming soon
+  <main>
+    <div class="informations">
+      <img class="logo" src="./images/logo.svg" alt="Base Apparel">
+      <img class="hero-mobile" src="./images/hero-mobile.jpg" alt="Hero">
+      <div class="informations-body">
+        <label class="title">
+          <span>We're </span>coming soon
+        </label>
+        <label class="text-body">
+          Hello fellow shoppers! We're currently building our new fashion store. 
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </label>
+        <form action="/" class="form">
+          <div class="inputs">
+            <input class="email-input" type="email" name="email" placeholder="Email Address" required>
+            <img class="icon-error" src="./images/icon-error.svg" alt="error">
+            <button class="btn-submit" type="submit"><img src="./images/icon-arrow.svg" alt="Enviar"></button>
+          </div>
+          <label class="error-message">Please provide a valid email</label>
+        </form>
+      </div>
+    </div>
+    <img class="hero" src="./images/hero-desktop.jpg" alt="hero">
+  </main>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-  
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <label>
+      Challenge by <a target="_blank" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a target="_blank" href="#">Everton Borges</a>.
+    </label>
   </footer>
 </body>
 </html>
